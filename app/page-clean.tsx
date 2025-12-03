@@ -480,7 +480,7 @@ export default function AutomatedTimingSystemDashboard() {
                 <Label>Número de Vallas</Label>
                 <Select
                   value={numHurdles.toString()}
-                  onValueChange={(v) => setNumHurdles(Number.parseInt(v))}
+                  onValueChange={(v: string) => setNumHurdles(Number.parseInt(v))}
                   disabled={isRaceActive}
                 >
                   <SelectTrigger>
@@ -580,3 +580,4 @@ export default function AutomatedTimingSystemDashboard() {
     </div>
   )
 }
+
